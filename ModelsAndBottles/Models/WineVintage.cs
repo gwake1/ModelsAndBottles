@@ -18,16 +18,16 @@ namespace ModelsAndBottles.Models
         // Wine Maturity Foreign Key
         public int VintageMaturityId { get; set; }
         // Wine Maturity Navigation Property
-        public VintageMaturity VintageMaturity { get; set; }
+        public virtual VintageMaturity VintageMaturity { get; set; }
 
         // Wine Foreign Key
         public int WineId { get; set; }
         // Wine Navigation Property
-        public Wine Wine { get; set; }
+        public virtual Wine Wine { get; set; }
 
         // Wine List Foreign Key
         public int WineListId { get; set; }
         // Wine List Navigation Property
-        public WineList WineList { get; set; }
+        public virtual WineList WineList { get; set; }
     }
 }

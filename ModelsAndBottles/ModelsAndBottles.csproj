@@ -176,8 +176,23 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TerroirsController.cs" />
+    <Compile Include="Controllers\VintageMaturitiesController.cs" />
+    <Compile Include="Controllers\WinesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503261523352_Seed.cs" />
+    <Compile Include="Migrations\201503261523352_Seed.Designer.cs">
+      <DependentUpon>201503261523352_Seed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503261541593_Seed1.cs" />
+    <Compile Include="Migrations\201503261541593_Seed1.Designer.cs">
+      <DependentUpon>201503261541593_Seed1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503261606229_Seed2.cs" />
+    <Compile Include="Migrations\201503261606229_Seed2.Designer.cs">
+      <DependentUpon>201503261606229_Seed2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -189,28 +204,93 @@
     <Compile Include="Models\WineList.cs" />
     <Compile Include="Models\WineVintage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IWineRepository.cs" />
+    <Compile Include="Repository\WineRepository.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\base.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\apple-touch-icon-114x114.png" />
+    <Content Include="Content\images\apple-touch-icon-72x72.png" />
+    <Content Include="Content\images\apple-touch-icon.png" />
+    <Content Include="Content\images\bg.jpg" />
+    <Content Include="Content\images\bg1.jpg" />
+    <Content Include="Content\images\bg2.jpg" />
+    <Content Include="Content\images\bg3.jpg" />
+    <Content Include="Content\images\bg4.jpg" />
+    <Content Include="Content\images\bg5.jpg" />
+    <Content Include="Content\images\bg6.jpg" />
+    <Content Include="Content\images\contact.jpg" />
+    <Content Include="Content\images\contactpage.jpg" />
+    <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\flexslider\bg_direction_nav.png" />
+    <Content Include="Content\images\history.jpg" />
+    <Content Include="Content\images\history1.jpg" />
+    <Content Include="Content\images\history2.jpg" />
+    <Content Include="Content\images\history3.jpg" />
+    <Content Include="Content\images\history4.jpg" />
+    <Content Include="Content\images\history5.jpg" />
+    <Content Include="Content\images\history6.jpg" />
+    <Content Include="Content\images\lebel.jpg" />
+    <Content Include="Content\images\loader.gif" />
+    <Content Include="Content\images\navselect.gif" />
+    <Content Include="Content\images\news1.jpg" />
+    <Content Include="Content\images\news2.jpg" />
+    <Content Include="Content\images\product1.jpg" />
+    <Content Include="Content\images\product2.jpg" />
+    <Content Include="Content\images\product3.jpg" />
+    <Content Include="Content\images\product4.jpg" />
+    <Content Include="Content\images\product5.jpg" />
+    <Content Include="Content\images\product6.jpg" />
+    <Content Include="Content\images\product7.jpg" />
+    <Content Include="Content\images\product8.jpg" />
+    <Content Include="Content\images\product9.jpg" />
+    <Content Include="Content\images\room1.jpg" />
+    <Content Include="Content\images\room2.jpg" />
+    <Content Include="Content\images\slide1.jpg" />
+    <Content Include="Content\images\slide2.jpg" />
+    <Content Include="Content\images\slide3.jpg" />
+    <Content Include="Content\images\socials\dribbble.png" />
+    <Content Include="Content\images\socials\facebook.png" />
+    <Content Include="Content\images\socials\forrst.png" />
+    <Content Include="Content\images\socials\googleplus.png" />
+    <Content Include="Content\images\socials\twitter.png" />
+    <Content Include="Content\images\team.jpg" />
+    <Content Include="Content\images\visitus.jpg" />
+    <Content Include="Content\images\wine.png" />
+    <Content Include="Content\images\winegear.jpg" />
+    <Content Include="Content\images\wines.jpg" />
+    <Content Include="Content\images\winesintro.jpg" />
+    <Content Include="Content\images\winesintro.png" />
+    <Content Include="Content\screen.css" />
+    <Content Include="Content\skeleton.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\images\.DS_Store" />
+    <Content Include="Content\images\flexslider\.DS_Store" />
+    <Content Include="Content\images\socials\.DS_Store" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\cbpScroller.js" />
+    <Content Include="Scripts\classie.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\jquery.flexslider-min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\screen.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -257,6 +337,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201503261523352_Seed.resx">
+      <DependentUpon>201503261523352_Seed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503261541593_Seed1.resx">
+      <DependentUpon>201503261541593_Seed1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503261606229_Seed2.resx">
+      <DependentUpon>201503261606229_Seed2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

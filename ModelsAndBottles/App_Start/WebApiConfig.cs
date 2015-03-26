@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using Newtonsoft.Json.Serialization;
 
 namespace ModelsAndBottles
 {
@@ -19,6 +20,13 @@ namespace ModelsAndBottles
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            //var json = config.Formatters.JsonFormatter;
+            //json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
+            //json.SerializerSettings.ContractResolver = new DefaultContractResolver()
+            //{
+            //    IgnoreSerializableInterface = true,
+            //    IgnoreSerializableAttribute = true
+            //};
         }
     }
 }

@@ -21,11 +21,17 @@ namespace ModelsAndBottles
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Scripts/cbpScroller.js",
+                      "~/Scripts/classie.js",
+                      "~/Scripts/jquery.flexslider-min.js",
+                      "~/Scripts/screen.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/base.css",
+                      "~/Content/screen.css",
+                      "~/Content/skeleton.css"));
         }
     }
 }
