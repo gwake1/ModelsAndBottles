@@ -235,7 +235,7 @@ html[xmlns] .slides {
 	height: 52px;
 	margin: -15px 0 0;
 	display: block;
-	background:  url(../images/flexslider/bg_direction_nav.png) no-repeat;
+	background:  url(images/flexslider/bg_direction_nav.png) no-repeat;
 	position: absolute;
 	top: 5%;
 	cursor: pointer;
@@ -315,7 +315,8 @@ html[xmlns] .slides {
 }
 /****************************** Home Content - History ******************************/
 .bg {
-	background: url(../images/bg2.jpg), #f1ece9;
+    background-image: url('images/Wine_cellar.jpg');
+	/*background: url(images/bg2.jpg), #f1ece9;*/
 	background-position: top left, top right;
 	background-repeat: repeat-y, no-repeat;
 	background-size: 50%, 50%;
@@ -647,14 +648,14 @@ input#mc-embedded-subscribe.button {
 }
 /****************************** Home Two ******************************/
 #bg {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	width: 100%;
-	background: #fff url(../images/bg4.jpg) no-repeat;
-	height: 700px;
-	background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-image: url('images/Wine_cellar.jpg');
+    height: 700px;
+    background-size: cover;
 }
 #wrapper {
 	position: absolute;
@@ -675,7 +676,7 @@ input#mc-embedded-subscribe.button {
 /****************************** Story ******************************/
 #bg1 {
 	width: 100%;
-	background: #fff url(../images/bg5.jpg) no-repeat;
+	background: #fff url(images/bg5.jpg) no-repeat;
 	height: 500px;
 	background-size: cover;
 }
@@ -832,10 +833,10 @@ h4.room-category {
 }
 /****************************** Wines ******************************/
 #bg3 {
-	width: 100%;
-	background: #fff url(../images/wines.jpg) no-repeat;
-	height: 500px;
-	background-size: cover;
+    width: 100%;
+    background: #fff url(/Content/images/wines.jpg) no-repeat;
+    height: 500px;
+    background-size: cover;
 }
 span.price {
 	position:relative;
@@ -1096,7 +1097,7 @@ div#comments a.buttonLink {
 /****************************** Contact ******************************/
 #bg4 {
 	width: 100%;
-	background: #fff url(../images/contactpage.jpg) no-repeat;
+	background: #fff url(images/contactpage.jpg) no-repeat;
 	height: 500px;
 	background-size: cover;
 }

@@ -205,19 +205,19 @@ select {
 }
 /* Header Responsive Menu Form Style */
 .header select {
-	-webkit-appearance: none;
-	padding: 5px;
-	outline: none;
-	border:1px solid #000;
-	overflow: hidden;
-	font: 1.1em 'Ubuntu', sans-serif;
-	max-width: 100%;
-	display: block;
-	margin-left:auto;
-	margin-right:auto;
-	background:#5d2331 url(../images/navselect.gif) no-repeat right center;
-	color: #fff;
-	margin-bottom:5px;
+    -webkit-appearance: none;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #000;
+    overflow: hidden;
+    font: 1.1em 'Ubuntu', sans-serif;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #5d2331 url('images/navselect.gif') no-repeat right center;
+    color: #fff;
+    margin-bottom: 5px;
 }
 .header option {
 	outline: none;

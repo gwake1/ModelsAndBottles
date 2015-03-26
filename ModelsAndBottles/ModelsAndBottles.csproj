@@ -264,6 +264,7 @@
     <Content Include="Content\images\wines.jpg" />
     <Content Include="Content\images\winesintro.jpg" />
     <Content Include="Content\images\winesintro.png" />
+    <Content Include="Content\images\Wine_cellar.jpg" />
     <Content Include="Content\screen.css" />
     <Content Include="Content\skeleton.css" />
     <Content Include="favicon.ico" />
