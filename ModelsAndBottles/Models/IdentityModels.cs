@@ -29,5 +29,10 @@ namespace ModelsAndBottles.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<WineList> WineLists { get; set; }
+        public DbSet<VintageMaturity> VintageMaturities { get; set; } 
+        public DbSet<Terroir> Terroirs { get; set; }
+        public DbSet<WineVintage> WineVintages { get; set; }
+        public DbSet<Wine> Wines { get; set; } 
     }
 }
