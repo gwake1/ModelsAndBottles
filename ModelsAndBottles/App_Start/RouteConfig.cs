@@ -14,6 +14,11 @@ namespace ModelsAndBottles
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "WineList",
+                url: "WineListsMVC/Index",
+                defaults: new {controller = "WineListsMVC", action = "Index"});
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

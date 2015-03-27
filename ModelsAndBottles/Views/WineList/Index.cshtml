@@ -1,18 +1,11 @@
-﻿@model 
-@{
+﻿@{
     ViewBag.Title = "Wine Selection";
     Layout = "~/Views/Shared/_LayoutWineList.cshtml";
 }
 @section JavascriptInHead
 {
     <script src="~/AngularJs/WineList/winelist-controller.js"></script>
-    <script type="text/javascript">
-        wineModule.factory('wineListData', function() {
-            return {
-                wine: 
-            };
-        })
-    </script>
+    <script src="~/AngularJs/WineList/wineListService.js"></script>
 }
 <div class="container">
     <div class="row">

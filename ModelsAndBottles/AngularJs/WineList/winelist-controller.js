@@ -1,3 +1,5 @@
-﻿wineModule.controller('WineListController', function($scope, $http,wineListData) {
-    $scope.wine = $http.get()
+﻿app.controller('WineListController', function($scope, wineListService) {
+    wineListService.get().then(function(wine) { $scope.wine = wine;
+        console.log(wine);
+    });
 });
