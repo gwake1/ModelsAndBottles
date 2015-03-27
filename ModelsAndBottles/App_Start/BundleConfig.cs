@@ -21,6 +21,7 @@ namespace ModelsAndBottles
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/bootstrap-theme.min.css",
                       "~/Scripts/respond.js",
                       "~/Scripts/cbpScroller.js",
                       "~/Scripts/classie.js",

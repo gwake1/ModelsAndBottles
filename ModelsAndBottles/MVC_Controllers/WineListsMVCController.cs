@@ -1,39 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using ModelsAndBottles.Models;
 
 namespace ModelsAndBottles.MVC_Controllers
 {
     public class WineListsMVCController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
-
         // GET: WineListsMVC
-        public async Task<ActionResult> Index()
+        public ActionResult Index()
         {
-            return View(await db.WineLists.ToListAsync());
+            return View();
         }
 
         // GET: WineListsMVC/Details/5
-        public async Task<ActionResult> Details(int? id)
+        public ActionResult Details(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            WineList wineList = await db.WineLists.FindAsync(id);
-            if (wineList == null)
-            {
-                return HttpNotFound();
-            }
-            return View(wineList);
+            return View();
         }
 
         // GET: WineListsMVC/Create
@@ -43,86 +27,63 @@ namespace ModelsAndBottles.MVC_Controllers
         }
 
         // POST: WineListsMVC/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Name")] WineList wineList)
+        public ActionResult Create(FormCollection collection)
         {
-            if (ModelState.IsValid)
+            try
             {
-                db.WineLists.Add(wineList);
-                await db.SaveChangesAsync();
+                // TODO: Add insert logic here
+
                 return RedirectToAction("Index");
             }
-
-            return View(wineList);
+            catch
+            {
+                return View();
+            }
         }
 
         // GET: WineListsMVC/Edit/5
-        public async Task<ActionResult> Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            WineList wineList = await db.WineLists.FindAsync(id);
-            if (wineList == null)
-            {
-                return HttpNotFound();
-            }
-            return View(wineList);
+            return View();
         }
 
         // POST: WineListsMVC/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Name")] WineList wineList)
+        public ActionResult Edit(int id, FormCollection collection)
         {
-            if (ModelState.IsValid)
+            try
             {
-                db.Entry(wineList).State = EntityState.Modified;
-                await db.SaveChangesAsync();
+                // TODO: Add update logic here
+
                 return RedirectToAction("Index");
             }
-            return View(wineList);
+            catch
+            {
+                return View();
+            }
         }
 
         // GET: WineListsMVC/Delete/5
-        public async Task<ActionResult> Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            WineList wineList = await db.WineLists.FindAsync(id);
-            if (wineList == null)
-            {
-                return HttpNotFound();
-            }
-            return View(wineList);
+            return View();
         }
 
         // POST: WineListsMVC/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> DeleteConfirmed(int id)
+        [HttpPost]
+        public ActionResult Delete(int id, FormCollection collection)
         {
-            WineList wineList = await db.WineLists.FindAsync(id);
-            db.WineLists.Remove(wineList);
-            await db.SaveChangesAsync();
-            return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
+            try
             {
-                db.Dispose();
+                // TODO: Add delete logic here
+
+                return RedirectToAction("Index");
             }
-            base.Dispose(disposing);
+            catch
+            {
+                return View();
+            }
         }
     }
 }
