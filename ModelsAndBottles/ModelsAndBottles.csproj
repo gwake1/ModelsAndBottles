@@ -187,7 +187,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="API_Controllers\TerroirsController.cs" />
-    <Compile Include="API_Controllers\VintageMaturitiesController.cs" />
     <Compile Include="API_Controllers\WineListsController.cs" />
     <Compile Include="API_Controllers\WinesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -228,6 +227,7 @@
     <Content Include="AngularJs\Home\hTemplate.html" />
     <Content Include="AngularJs\Home\winesHomeController.js" />
     <Content Include="AngularJs\Home\winesHomeDirective.js" />
+    <Content Include="AngularJs\WineDetail\wdTemplate.html" />
     <Content Include="AngularJs\WinesList\wlController.js" />
     <Content Include="AngularJs\WinesList\wlDirective.js" />
     <Content Include="AngularJs\WinesList\wlService.js" />

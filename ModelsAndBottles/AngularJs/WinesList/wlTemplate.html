@@ -2,7 +2,7 @@
 <div class="container" >
     <table class="table table-striped table-hover table-condensed">
         <tr ng-repeat="item in wine">
-            <td> {{item.Name}}</td>
+            <td ng-click="getWine(item.Id)"> {{item.Name}}</td>
         </tr>
     </table>
 </div>
