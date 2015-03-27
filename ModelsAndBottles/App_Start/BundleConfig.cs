@@ -30,6 +30,7 @@ namespace ModelsAndBottles
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-theme.min.css",
                       "~/Content/base.css",
                       "~/Content/screen.css",
                       "~/Content/skeleton.css"));
