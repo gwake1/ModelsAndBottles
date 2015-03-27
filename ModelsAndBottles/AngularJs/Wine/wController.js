@@ -3,7 +3,10 @@
         $scope.wine = wWine;
         console.log(wWine);
     });
-    $scope.submitForm() = function() {
+    $scope.submitForm = function() {
+        $scope.addNewWine = angular.copy($scope.newWine);
+    };
+    $scope.cancelForm = function() {
         
     }
 });

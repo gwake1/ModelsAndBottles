@@ -8,4 +8,76 @@
     <script src="~/AngularJs/Home/winesHomeController.js"></script>
     <script src="~/AngularJs/Home/winesHomeDirective.js"></script>
 }
-<wine-home/>
+
+<div class="container">
+    <div id="bg"></div>
+    <div id="cover"></div>
+    <!-- About us ==================================================
+    ================================================== -->
+
+    <div id="wrapper">
+        <div id="wrapper-inner">
+            <!--Content Part - Navigation and Logo ==================================================
+            ================================================== -->
+            <div class="header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <h1>Models and Bottles</h1>
+                        </a>
+                    </div>
+                    <!-- Nav -->
+                    <nav id="navigation">
+                        <ul id="nav">
+                            <li>
+                                <a href="index.html">Home</a>
+                                <ul>
+                                    <li><a href="index1.html">Home - Version One</a></li>
+                                    <li><a href="index2.html">Home - Version Two</a></li>
+                                    <li><a href="index3.html">Home - Version Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="story.html">Story</a></li>
+                            <li><a href="visitus.html">Visit us</a></li>
+                            <li><a href="/#/Wine">Wine</a></li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                                <ul>
+                                    <li><a href="singleblog.html">Single Post Page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <!-- Responsive Menu -->
+                        <div class="responsive">
+                            <form id="responsive-menu" action="#" method="post">
+                                <select>
+                                    <option value="">Menu</option>
+                                    <option value="index.html">Home</option>
+                                    <option value="index1.html">Home - Version One</option>
+                                    <option value="index2.html">Home - Version Two</option>
+                                    <option value="index3.html">Home - Version Three</option>
+                                    <option value="story.html">Story</option>
+                                    <option value="visitus.html">Visit us</option>
+                                    <option value="wines.html">Wines</option>
+                                    <option value="blog.html">Blog</option>
+                                    <option value="singleblog.html">Single Post Page</option>
+                                    <option value="contact.html">Contact</option>
+                                </select>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+                <!-- container ends here -->
+            </div>
+            <!-- header ends here -->
+                <div ng-app="modelsAndBottles">
+                    <div ng-controller="WinesController">
+                        <div ng-view></div>
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+
+        

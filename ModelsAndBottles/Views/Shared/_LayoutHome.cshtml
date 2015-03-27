@@ -4,15 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    
     @Scripts.Render("~/bundles/modernizr")
-    <script src="~/Scripts/angular.min.js"></script>
-    <script src="~/Scripts/angular-route.min.js"></script>
 </head>
-<body>
+<body ng-controller="WinesHomeController">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -40,8 +39,6 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-
-    <div ng-view></div>
 
     @RenderSection("JavascriptInBody", required: true)
 </body>

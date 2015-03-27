@@ -4,29 +4,29 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace ModelsAndBottles.MVC_Controllers
+namespace ModelsAndBottles.MVC
 {
-    public class WineController : Controller
+    public class HomeController : Controller
     {
-        // GET: Wine
+        // GET: Home
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: Wine/Details/5
+        // GET: Home/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Wine/Create
+        // GET: Home/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Wine/Create
+        // POST: Home/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -42,13 +42,13 @@ namespace ModelsAndBottles.MVC_Controllers
             }
         }
 
-        // GET: Wine/Edit/5
+        // GET: Home/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Wine/Edit/5
+        // POST: Home/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -64,13 +64,13 @@ namespace ModelsAndBottles.MVC_Controllers
             }
         }
 
-        // GET: Wine/Delete/5
+        // GET: Home/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Wine/Delete/5
+        // POST: Home/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

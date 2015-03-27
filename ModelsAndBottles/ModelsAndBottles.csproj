@@ -186,9 +186,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="MVC_Controllers\AccountController.cs" />
-    <Compile Include="MVC_Controllers\HomeController.cs" />
-    <Compile Include="MVC_Controllers\ManageController.cs" />
     <Compile Include="API_Controllers\TerroirsController.cs" />
     <Compile Include="API_Controllers\VintageMaturitiesController.cs" />
     <Compile Include="API_Controllers\WineListsController.cs" />
@@ -217,8 +214,7 @@
     <Compile Include="Models\Wine.cs" />
     <Compile Include="Models\WineList.cs" />
     <Compile Include="Models\WineVintage.cs" />
-    <Compile Include="MVC_Controllers\WineController.cs" />
-    <Compile Include="MVC_Controllers\WineListsMVCController.cs" />
+    <Compile Include="MVC\HomeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IWineRepository.cs" />
     <Compile Include="Repository\WineRepository.cs" />
@@ -232,10 +228,10 @@
     <Content Include="AngularJs\Home\hTemplate.html" />
     <Content Include="AngularJs\Home\winesHomeController.js" />
     <Content Include="AngularJs\Home\winesHomeDirective.js" />
-    <Content Include="AngularJs\WineList\wlController.js" />
-    <Content Include="AngularJs\WineList\wlDirective.js" />
-    <Content Include="AngularJs\WineList\wlService.js" />
-    <Content Include="AngularJs\WineList\wlTemplate.html" />
+    <Content Include="AngularJs\WinesList\wlController.js" />
+    <Content Include="AngularJs\WinesList\wlDirective.js" />
+    <Content Include="AngularJs\WinesList\wlService.js" />
+    <Content Include="AngularJs\WinesList\wlTemplate.html" />
     <Content Include="AngularJs\Wine\wController.js" />
     <Content Include="AngularJs\Wine\wDirective.js" />
     <Content Include="AngularJs\Wine\wService.js" />
@@ -1150,14 +1146,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shared\_LayoutWineList.cshtml" />
+    <Content Include="Views\Shared\_LayoutWinesList.cshtml" />
     <Content Include="Scripts\version.json" />
-    <Content Include="Views\WineListsMVC\Create.cshtml" />
-    <Content Include="Views\WineListsMVC\Delete.cshtml" />
-    <Content Include="Views\WineListsMVC\Details.cshtml" />
-    <Content Include="Views\WineListsMVC\Edit.cshtml" />
-    <Content Include="Views\WineListsMVC\Index.cshtml" />
-    <Content Include="Views\Wine\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutWines.cshtml" />
     <Content Include="Views\Shared\_LayoutHome.cshtml" />
   </ItemGroup>
